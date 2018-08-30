@@ -19,7 +19,15 @@ $nome = $_SESSION['nome'];
 	<body>
 		<div>
 			<h1>Bem vindo, <?=$nome?></h1>
-						   
+
+
+            <a href="cadastro.php">
+
+                <button>Cadastrar!</button>
+
+            </a>
+
+
 			<form method="post" action="logout.php">
 				<input type="hidden" value="<?=$nome?>">
 				<button type="submit">Logout</button>			
